@@ -11,9 +11,9 @@ import {
   MessageSquare,
   ArrowRight
 } from 'lucide-react';
-import { Product, CartItem, Variant } from '../types';
-import { MOCK_PRODUCTS, CURRENT_STORE } from '../constants';
-import { getShoppingAdvice } from '../services/gemini';
+import { Product, CartItem, Variant } from '../types.ts';
+import { MOCK_PRODUCTS, CURRENT_STORE } from '../constants.tsx';
+import { getShoppingAdvice } from '../services/gemini.ts';
 
 interface StoreFrontProps {
   onGoToAdmin: () => void;

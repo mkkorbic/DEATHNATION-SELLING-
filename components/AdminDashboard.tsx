@@ -21,8 +21,8 @@ import {
   LineChart,
   Line
 } from 'recharts';
-import { Product, Order, OrderStatus } from '../types';
-import { MOCK_PRODUCTS } from '../constants';
+import { Product, Order, OrderStatus } from '../types.ts';
+import { MOCK_PRODUCTS } from '../constants.tsx';
 
 const mockSalesData = [
   { name: 'Mon', sales: 400 },

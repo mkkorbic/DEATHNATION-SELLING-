@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { AppView, CartItem } from './types';
-import { StoreFront } from './components/StoreFront';
-import { AdminDashboard } from './components/AdminDashboard';
+import { AppView, CartItem } from './types.ts';
+import { StoreFront } from './components/StoreFront.tsx';
+import { AdminDashboard } from './components/AdminDashboard.tsx';
 
 const App: React.FC = () => {
   const [view, setView] = useState<AppView>('STORE');

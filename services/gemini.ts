@@ -1,10 +1,11 @@
 
 import { GoogleGenAI } from "@google/genai";
-import { Product } from "../types";
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
+import { Product } from "../types.ts";
 
 export const getShoppingAdvice = async (query: string, products: Product[]) => {
+  // Initialize AI inside the function to avoid top-level ReferenceErrors for process.env
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
+  
   const productContext = products.map(p => 
     `- ${p.name}: ${p.description} (Price: ${p.currency} ${p.basePrice})`
   ).join('\n');

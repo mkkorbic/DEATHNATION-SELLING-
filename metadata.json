@@ -1,0 +1,8 @@
+{
+  "name": "Death Nation Commerce Platform",
+  "description": "A multi-store e-commerce platform MVP featuring a mobile-first UI, flexible product variants, administrative dashboard, and a Gemini-powered shopping assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
